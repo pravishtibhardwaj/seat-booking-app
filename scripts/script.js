@@ -15,7 +15,9 @@ const totalPrice = function () {
   countEl.textContent = seatCount;
   totalEl.innerText = seatCount * ticketPrice;
 };
-
+const alertfunction = function () {
+  alert("Seats Booked successfully");
+};
 // event listeners
 movieEl.addEventListener(`change`, function () {
   ticketPrice = Number(movieEl.value);
